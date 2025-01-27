@@ -1,0 +1,200 @@
+
+.productPage {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .products {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            background: #fff;
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+            border-radius: 3px;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 20px;
+
+            
+
+            .page-cont {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                justify-content: center;
+
+                .title {
+                    font-size: 30px;
+                    color: #062F42;
+                    margin-bottom: 10px;
+                }
+
+                .desc {
+                    font-size: 20px;
+                    color: #000;
+                    margin-bottom: 12px;
+                }
+
+                .rating {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 12px;
+
+                    p {
+                        color: #062F42;
+                        font-size: 20px;
+                        font-weight: 700;
+                        margin-right: 20px;
+                    }
+                }
+
+                .price {
+                    color: #062F42;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
+
+                .warranty {
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                    color: #000;
+                }
+
+                button {
+                    padding: 5px 19px;
+                    background: #fff;
+                    border: 1px solid #000;
+                    color: #062F42;
+                    cursor: pointer;
+                    border-radius: 3px;
+                    transition: transform 0.3s ease, transform 0.5s ease;
+
+                    &:hover {
+                        background: #062F42;
+                        color: #fff;
+                        transform: scale(1.05);
+                    }
+                }
+
+                .card__buy {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    button {
+                        padding: 5px 19px;
+                        background: #fff;
+                        border: 1px solid #000;
+                        color: #062F42;
+                        cursor: pointer;
+                        border-radius: 3px;
+                        transition: transform 0.1s ease;
+
+                        &:active {
+                            background: #062F42;
+                            color: #fff;
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+
+                .card__circle {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: -25px;
+                    left: -25px;
+                    background: #fff;
+                    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+                }
+            }
+        }
+
+        .title {
+            text-align: center;
+            color: #062F42;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 400;
+
+        }
+
+        .reviews {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .review {
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                gap: 10px;
+                background: #fff;
+                box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+                width: 330px;
+                padding: 10px;
+                border-radius: 3px;
+                color: #000;
+
+                .review-header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+
+                    .review-img{
+                        border-radius: 50%;
+                        box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 3px;
+                        background: #00000048;
+
+                        img{
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+
+                    strong{
+                        color: #062F42;
+                    }
+
+                    .rating{
+                        color: #062F42;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+
+                    .star{
+                        font-weight: 700;
+                        color: rgba(255, 174, 0, 0.92);
+                    }
+                }
+
+                p{
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 700;
+                }
+            }
+
+        }
+    }
+}

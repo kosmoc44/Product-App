@@ -1,0 +1,85 @@
+@use "./fonts.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Montserat";
+}
+
+
+body {
+    background: #BABABA;
+}
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    position: relative;
+
+    .background-video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+        font-weight: 400;
+    }
+
+    .loading {
+        font-size: 50px;
+        font-weight: 700;
+        background: linear-gradient(90deg, #ffffff, #00000000, #81037af0);
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient-animation 3s ease infinite;
+        position: absolute;
+    }
+
+    @keyframes gradient-animation {
+        100% {
+            background-position: 150% 50%;
+        }
+    }
+
+}
+
+.container {
+    max-width: 1430px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 30px;
+
+
+    button {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        border-radius: 50%;
+        transition: 0.5s ease;
+
+        &:hover {
+            background: #fff;
+            transition: 0.5s ease;
+        }
+    }
+}

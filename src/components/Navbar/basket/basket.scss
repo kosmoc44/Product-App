@@ -1,0 +1,158 @@
+.basket {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 30px;
+
+        .basket__back {
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+            background: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s ease;
+
+            &:hover {
+                background: #062F42;
+                color: #fff;
+            }
+
+            &:active{
+                transform: scale(1.06);
+            }
+        }
+
+        .basket__top {
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+            border-radius: 3px;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            gap: 20px;
+
+            .basket__title {
+                font-size: 30px;
+                font-weight: 400;
+                margin-bottom: -4px;
+            }
+
+            .basket__count {
+                font-size: 20px;
+                font-weight: 400;
+
+            }
+        }
+
+        .basket__list {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 30px;
+            background: #fff;
+            width: 800px;
+            box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+            border-radius: 3px;
+
+            .basket__item {
+                width: 100%;
+                padding: 10px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #000;
+
+
+                .basket__img-title {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 5px;
+
+
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+
+                &-min,
+                &-plus,
+                &-del {
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+                    border: none;
+                    background: #fff;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        background: #062F42;
+                        color: #fff;
+                    }
+        
+                    &:active{
+                        transform: scale(1.06);
+                    }
+                }
+
+                .basket__item-right {
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                }
+
+                .basket__item-count {
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: center;
+
+                }
+            }
+        }
+
+        .total-price {
+            display: flex;
+            gap: 20px;
+            align-items: flex-end;
+
+            .total-count {
+                font-weight: 400;
+                color: #000;
+                background: #fff;
+                padding: 20px;
+                border-radius: 3px;
+                box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+                font-size: 16px;
+            }
+
+            .total-btn {
+                border: none;
+                padding: 10px 15px;
+                width: 126px;
+                outline: none;
+                background: #fff;
+                box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+                border-radius: 3px;
+                cursor: pointer;
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+}
