@@ -3,7 +3,7 @@ import code from "/src/assets/img/coding.svg"
 import "./navbar.scss"
 import frame from "/src/assets/img/Frame.svg"
 import { Link, useNavigate } from 'react-router-dom';
-import BasketZero from "../basketZero/basketZero";
+import BasketZero from "../basketZero/BasketZero";
 import { SearchContext } from "../../App";
 import down from '/src/assets/img/down.svg'
 import Contacts from "../contacts/Contacts";
