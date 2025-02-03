@@ -24,6 +24,7 @@ import Watch from "./components/Navbar/watch/Watch";
 import Phones from "./components/Navbar/phones/Phones";
 import Moto from "./components/Navbar/moto/Moto";
 import { toast, Toaster } from "sonner";
+import animatedVideo from './assets/video/animate.mp4'
 
 export const SearchContext = React.createContext();
 
@@ -69,7 +70,7 @@ function App() {
   if (loading || loadingTimer) {
     return <div className="loading-container">
       <video autoPlay loop muted className="background-video">
-        <source src="/src/assets/video/animate.mp4" type="video/mp4" />
+        <source src={animatedVideo} type="video/mp4" />
       </video>
       <div className="loading">
         Diploma Work
